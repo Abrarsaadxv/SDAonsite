@@ -1,4 +1,4 @@
-package Day05;
+package Homeworks.day05;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -24,8 +24,7 @@ public class Task02Day5 {
 
 
         ChromeOptions opthions = new ChromeOptions();
-        opthions.addArguments("" +
-                "");
+        opthions.addArguments("start-maximized");
         WebDriver driver = new ChromeDriver(opthions);
         // JavascriptException js =(JavascriptException)driver.getDriver()
         ;
