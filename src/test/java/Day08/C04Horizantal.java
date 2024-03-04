@@ -12,7 +12,7 @@ public class C04Horizantal  extends TestBase {
     @Test
     public void sliderTest(){
         By slider = By.xpath("//div[@class='range-slider vertical-range']/span[1]");
-        By slider2 = By.xpath("////div[@class='range-slider']/span[1]");
+        By slider2 = By.xpath("//div[@class='range-slider']/span[1]");
         //*_*_*_*_*_*_*_*_*_*_*_*_*__**_*_**_*_*_*_*
         //*_*_*_*_*_*_*_*_*_*_*_*_*__**_*_**_*_*_*_*
 
@@ -29,7 +29,11 @@ public class C04Horizantal  extends TestBase {
 
         WebElement sliderButton2= driver.findElement(slider2);
 actions
-        .dragAndDropBy(sliderButton2,34,0);
+        .dragAndDropBy(sliderButton2,-100,0)
+                .pause(Duration.ofSeconds(2))
+        .dragAndDropBy(sliderButton2,100,0)
+        .build()
+         .perform();
 
     }
 }
