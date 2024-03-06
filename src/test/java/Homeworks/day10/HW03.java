@@ -16,7 +16,7 @@ public class HW03 extends TestBase {
 //Verify that the file exists
 
 
-        String Filename = "Homework.txl";
+        String Filename = "Homework";
         String desktop = "Desktop";
         String userHome = System.getProperty("user.home");
         String separator = System.getProperty("file.separator");
