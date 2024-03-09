@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Hwchlange extends TestBase {
@@ -62,10 +63,15 @@ public class Hwchlange extends TestBase {
         String filePath ="Downloads";
         String fileName ="importData";
         String separater = System.getProperty("file.separator");
-        String pathOfFile = System.getProperty("user.home")+ separater+"Downloads"+separater+"selenium-snapshot.png";
+        String userHome = System.getProperty("user.home");
+//        String path = userHome+separater+filePath+separater+fileName;
 
-        boolean isExist = Files.exists(Paths.get(pathOfFile));
-        System.out.println("isExist = " + isExist);Assert.assertTrue(isExist);
+        String pathOfFile = System.getProperty("user.home")+ separater+"Downloads"+separater+"importData.csv";
+
+        boolean isExists = Files.exists(Path.of(pathOfFile));
+        System.out.println("is Exists = " + isExists);
+        Assert.assertTrue(isExists);
+
         //__*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*_
 
         //__*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*__*_*
