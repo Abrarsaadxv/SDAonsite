@@ -1,9 +1,9 @@
-package Homeworks.day10;
+package Homeworks.Week1.day01.day10;
 
 import Utility.TestBase;
 import org.junit.Test;
 
-public class HW02FileUpload extends TestBase {
+public class Hwchlange extends TestBase {
 
     @Test
     public void test(){
