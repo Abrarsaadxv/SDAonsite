@@ -1,4 +1,4 @@
-package Homeworks.day02;
+package Homeworks.Week1.day01.day02;
 
 import org.junit.*;
 import org.openqa.selenium.WebDriver;

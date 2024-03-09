@@ -1,4 +1,4 @@
-package Homeworks.day04;
+package Homeworks.Week1.day01.day04;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

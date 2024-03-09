@@ -1,4 +1,4 @@
-package Homeworks.day02;
+package Homeworks.Week1.day01.day02;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
